@@ -1,0 +1,62 @@
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.header-logo-container > h1 {
+  letter-spacing: -0.6px;
+}
+
+.header-content-container {
+  margin: 3rem auto 0 auto;
+  width: 400px;
+  position: relative;
+}
+
+.background-border {
+  width: 85%;
+  margin-left: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  z-index: 0;
+  background-color: rgb(224, 224, 224);
+  border: 0.5px solid rgb(224, 224, 224);
+  display: flex;
+  justify-content: flex-start;
+}
+.filled-border {
+  width: 15%;
+  position: absolute;
+  top: 1.5rem;
+  z-index: 0;
+  margin-left: 2rem;
+  background-color: var(--PRIMARY-COLOR);
+  border: 0.5px solid var(--PRIMARY-COLOR);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.boarding-progress-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+}
+
+.boarding {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid rgb(224, 224, 224);
+  background-color: white;
+  color: rgb(142, 142, 142);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  background: var(--PRIMARY-COLOR);
+  color: white;
+}
