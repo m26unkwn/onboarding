@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Header, Onboard, Profile, Welcome, Workspace } from "./pages";
+import { Header, Onboard, Welcome, Workspace, WorkspaceType } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
       displayName: "",
     },
     workspace: "",
-    profile: "",
+    workspaceType: "",
   });
 
-  const [boardingProgress, setBoardingProgress] = useState(15);
+  const [boardingProgress, setBoardingProgress] = useState(25);
 
   return (
     <div className='app-container'>
@@ -30,8 +30,25 @@ function App() {
                 />
               }
             />
-            <Route path='/workspace' element={<Workspace />} />
-            <Route path='/profile' element={<Profile />} />
+            <Route
+              path='/workspace'
+              element={
+                <Workspace
+                  setBoardingData={setBoardingData}
+                  setBoardingProgress={setBoardingProgress}
+                />
+              }
+            />
+            <Route
+              path='/profile'
+              element={
+                <WorkspaceType
+                  boardingData={boardingData}
+                  setBoardingData={setBoardingData}
+                  setBoardingProgress={setBoardingProgress}
+                />
+              }
+            />
             <Route path='/onboard' element={<Onboard />} />
           </Route>
         </Routes>

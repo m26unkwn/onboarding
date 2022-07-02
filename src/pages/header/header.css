@@ -14,13 +14,14 @@
 
 .header-content-container {
   margin: 3rem auto 0 auto;
-  width: 400px;
+  width: 25rem;
+
   position: relative;
+  display: flex;
 }
 
 .background-border {
-  width: 85%;
-  margin-left: 2rem;
+  width: 100%;
   position: absolute;
   top: 1.5rem;
   z-index: 0;
@@ -33,7 +34,6 @@
   position: absolute;
   top: 1.5rem;
   z-index: 0;
-  margin-left: 2rem;
   background-color: var(--PRIMARY-COLOR);
   border: 0.5px solid var(--PRIMARY-COLOR);
   display: flex;
@@ -41,10 +41,10 @@
 }
 
 .boarding-progress-container {
-  width: 400px;
+  /* width: 25rem; */
+  width: inherit;
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -64,4 +64,10 @@
 .filled {
   background: var(--PRIMARY-COLOR);
   color: white;
+}
+
+@media (max-width: 480px) {
+  .header-content-container {
+    width: 20rem;
+  }
 }
