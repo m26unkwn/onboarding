@@ -9,15 +9,15 @@ export const Workspace = () => {
         <h1>Let's setup home for all your work</h1>
         <p>You can always create another workspace later.</p>
       </div>
-      <div className='form-container'>
-        <Input title='Workspace Name' placeholder='Eden' />
+      <form className='form-container'>
+        <Input title='Workspace Name' placeholder='Eden' required={true} />
         <Input
           title='Workspace URL'
           placeholder='Example'
           optional='www.eden.com/'
         />
         <Button title='Create Workspace' />
-      </div>
+      </form>
     </main>
   );
 };

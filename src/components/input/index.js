@@ -1,7 +1,14 @@
 import React from "react";
 import "./input.css";
 
-export const Input = ({ title, placeholder, optional }) => {
+export const Input = ({
+  title,
+  placeholder,
+  optional,
+  required,
+  value,
+  onChange,
+}) => {
   return (
     <div className='input-container'>
       <label>
@@ -12,7 +19,10 @@ export const Input = ({ title, placeholder, optional }) => {
         <input
           type='text'
           id={optional && "border-left-radius"}
+          value={value}
+          onChange={onChange}
           placeholder={placeholder}
+          required={required}
         />
       </div>
     </div>

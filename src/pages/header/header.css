@@ -30,7 +30,6 @@
   justify-content: flex-start;
 }
 .filled-border {
-  width: 15%;
   position: absolute;
   top: 1.5rem;
   z-index: 0;
