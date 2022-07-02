@@ -7,6 +7,9 @@
 }
 :root {
   --PRIMARY-COLOR: #664de5;
+  --PLACEHODER-COLOR: rgb(124, 124, 124);
+  --BORDER-COLOR: rgb(224, 224, 224);
+  --SECONDARY-TEXT-COLOR: rgb(142, 142, 142);
 }
 
 body {
@@ -17,4 +20,12 @@ body {
   width: 40rem;
 
   margin: auto;
+}
+
+@media (max-width: 780px) {
+  .main-container {
+    width: auto;
+
+    margin: auto;
+  }
 }

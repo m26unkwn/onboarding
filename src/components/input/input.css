@@ -8,15 +8,41 @@
   color: rgb(73, 73, 73);
   margin: 12px 0;
 }
-.input-container > input {
+.input-container input {
   all: unset;
   font-weight: bold;
   color: rgb(73, 73, 73);
   border-radius: 4px;
-  border: 1px solid rgb(224, 224, 224);
+  border: 1px solid var(--BORDER-COLOR);
   padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.input-container > input::placeholder {
-  font-weight: 600;
+.input-container input::placeholder {
+  font-weight: 500;
+  color: var(--SECONDARY-TEXT-COLOR);
+}
+
+.label-optional {
+  color: rgb(167, 167, 167);
+}
+
+.input-optional-container {
+  display: flex;
+  align-items: center;
+}
+.optional-side {
+  border: 1px solid var(--BORDER-COLOR);
+  padding: 1rem;
+  font-weight: 500;
+  background: rgb(240, 240, 240);
+  color: var(--SECONDARY-TEXT-COLOR);
+
+  border-right: none;
+}
+
+#border-left-radius {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }

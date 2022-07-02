@@ -8,11 +8,11 @@ export const Welcome = () => {
       <div className='greeting-text'>
         <h1>Welcome! First thing first...</h1>
         <p>You can always change them better.</p>
-        <div className='form-container'>
-          <Input title='First Name' placeholder='steve Jobs' />
-          <Input title='Display Name' placeholder='steve' />
-          <Button title='Create Workspace' />
-        </div>
+      </div>
+      <div className='form-container'>
+        <Input title='First Name' placeholder='steve Jobs' />
+        <Input title='Display Name' placeholder='steve' />
+        <Button title='Create Workspace' />
       </div>
     </main>
   );

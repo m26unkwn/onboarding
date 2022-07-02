@@ -1,9 +1,15 @@
 .header-logo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 .header-logo-container > h1 {
-  letter-spacing: -0.6px;
+  letter-spacing: -02px;
+}
+
+.header-logo-container > img {
+  width: 50px;
 }
 
 .header-content-container {
@@ -56,7 +62,7 @@
   align-items: center;
 }
 
-.first {
+.filled {
   background: var(--PRIMARY-COLOR);
   color: white;
 }
