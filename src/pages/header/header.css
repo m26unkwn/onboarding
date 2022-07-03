@@ -36,12 +36,11 @@
   z-index: 0;
   background-color: var(--PRIMARY-COLOR);
   border: 0.5px solid var(--PRIMARY-COLOR);
-  display: flex;
-  justify-content: flex-start;
+
+  transition: all 0.5s ease-out;
 }
 
 .boarding-progress-container {
-  /* width: 25rem; */
   width: inherit;
   display: flex;
   justify-content: space-between;
@@ -59,6 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-out;
 }
 
 .filled {
