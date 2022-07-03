@@ -41,7 +41,9 @@ export const WorkspaceType = ({
                 : "profile-card"
             }
             onClick={() => userProfileHandler("myself")}>
-            <UserIcon />
+            <UserIcon
+              fill={workspaceType === "myself" && "var(--PRIMARY-COLOR)"}
+            />
             <div className='card-content'>
               <h5>For myself</h5>
               <p>Write better. Think more clearly. Stay organised.</p>
@@ -54,7 +56,9 @@ export const WorkspaceType = ({
                 : "profile-card"
             }
             onClick={() => userProfileHandler("team")}>
-            <TeamIcon />
+            <TeamIcon
+              fill={workspaceType === "team" && "var(--PRIMARY-COLOR)"}
+            />
             <div className='card-content'>
               <h5>With my team</h5>
               <p>Wikis, docs, taks & projects all in one place.</p>
